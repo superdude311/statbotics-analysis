@@ -2,9 +2,7 @@ import statbotics
 import csv
 
 sb = statbotics.Statbotics()
-teamlist = [6919, 2974, 1771, 8866, 1833, 1648, 1683, 6340, 1261, 6829, 6023, 7538, 3318, 10376, 4026, 1002, 9260, 5109, 7451, 10482, 9480, 4112, 9477, 3635, 5293, 8080, 1414, 8865, 4459, 9522, 6944, 4468, 8849, 5074, 8736, 5608, 5900, 6925, 6705, 832, 8100, 4240, 3344, 2415, 4188]
-
-
+teamlist = [9496, 4534, 900, 8738, 587, 4795, 4561, 9032, 2059, 6502, 2640, 1533, 6894, 4861, 8429, 5727, 8727, 7763, 4828, 6500, 10077, 7443, 3737, 9297, 5511, 4829, 2642, 10260, 10583, 9008, 9298, 5190, 2724, 9198, 3822, 8746, 6639, 3506, 3459, 6729]
 ranked = []
 
 for i in range(len(teamlist)):
@@ -17,7 +15,7 @@ eparank = sorted(ranked, key=lambda tup: tup[0], reverse=True)
 print(eparank)
 
 
-filename = "2025pch_dcmp.csv"
+filename = "2025fnc_dcmp.csv"
 
 with open(filename, 'w', newline='') as file:
     writer = csv.writer(file)
